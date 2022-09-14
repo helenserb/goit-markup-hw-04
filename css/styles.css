@@ -142,6 +142,15 @@ button{
     padding: 200px 0px;
     background-color: var(--secondary-bcg-color);
 }
+.overlay{
+    height: 600px;
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)),
+    url(../images/hero-bcg.jpg);
+}
 .hero-title{
     margin-right: auto;
     margin-bottom: 30px;
