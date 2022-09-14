@@ -291,6 +291,18 @@ img{
 .uppercase{
     text-transform: uppercase;
 }
+/* Клієнти */
+.clients-list{
+    display: flex;
+}
+.clients-item:not(:last-child){
+    margin-right: 30px;
+}
+.clients-logo{
+    width: 170px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
 /* Main portfolio.html */
 .filter-list{
     display: flex;
