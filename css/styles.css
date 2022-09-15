@@ -124,8 +124,22 @@ button{
     display: flex;
     margin-left: auto;
 }
+.contact-list>.item{
+    display: flex;
+    align-items: center;
+}
 .contact-list>.item:not(:last-child){
     margin-right: 50px;
+}
+
+.contact-icon{
+    margin-right: 10px;
+    fill: var(--secondary-text-color);
+    cursor: pointer;
+}
+.contact-icon:hover,
+.contact-icon:focus{
+    fill: var(--accent-color);
 }
 .contact-link{
     color: var(--secondary-text-color);
@@ -197,28 +211,15 @@ button{
 .advanteges>.item:not(:last-child){
     margin-right: 30px;
 }
-.advanteges>.item::before{
-    content: "";
-    display: block;
-    height: 120px;
-    border-radius: 4px;
+.advantege-box{
+    display: flex;
+    width: 270px;
+    height: 120px;;
     background-color: var(--additional-bcg-color);
-    background-repeat: no-repeat;
-    background-position: center;
 }
-.icon-antenna::before{
-    background-image: url(../images/icon-antenna.svg);
+.icon-advantege{
+    margin: auto;
 }
-.icon-clock::before{
-    background-image: url(../images/icon-clock.svg);
-}
-.icon-diagramm::before{
-    background-image: url(../images/icon-diagram.svg);
-}
-.icon-astronaut::before{
-    background-image: url(../images/icon-astronaut.svg);
-}
-
 .advanteges-title{
     margin-top: 30px;
     margin-bottom: 10px;
@@ -298,10 +299,16 @@ img{
 .clients-item:not(:last-child){
     margin-right: 30px;
 }
-.clients-logo{
-    width: 170px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
+.clients-item{
+   display: block;
+   width: 170px;
+   height: 92px;
+   border: 1px solid #AFB1B8;
+   border-radius: 4px;
+   background-color: var(--main-bcg-color); 
+}
+.client-logo{
+    fill: #afb1b8;
 }
 /* Main portfolio.html */
 .filter-list{
