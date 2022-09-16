@@ -294,6 +294,7 @@ img{
 .social-list{
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 .social-item:not(:last-child){
     margin-right: 10px;
@@ -305,8 +306,6 @@ img{
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    border: 1px solid #000000;
-    outline: 1px solid red;
 }
 .social-icon{
     fill: var(--icon-color);
@@ -329,17 +328,29 @@ img{
 .clients-item:not(:last-child){
     margin-right: 30px;
 }
-.clients-item{
-   display: block;
-   width: 170px;
-   height: 92px;
-   border: 1px solid #AFB1B8;
-   border-radius: 4px;
-   background-color: var(--main-bcg-color); 
+.clients-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    background-color: var(--main-bcg-color); 
+}
+.clients-link:hover,
+.clients-link:focus{
+     border: 1px solid var(--accent-color);
 }
 .client-logo{
-    fill: #afb1b8;
+    fill: var(--icon-color);
 }
+.clients-link:hover svg,
+.clients-link:focus svg{
+    fill: var(--accent-color);
+}
+
 /* Main portfolio.html */
 .filter-list{
     display: flex;
