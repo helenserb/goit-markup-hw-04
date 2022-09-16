@@ -122,11 +122,8 @@ button{
 }
 .contact-list{
     display: flex;
-    margin-left: auto;
-}
-.contact-list>.item{
-    display: flex;
     align-items: center;
+    margin-left: auto;
 }
 .contact-list>.item:not(:last-child){
     margin-right: 50px;
@@ -137,16 +134,19 @@ button{
     fill: var(--secondary-text-color);
     cursor: pointer;
 }
-.contact-icon:hover,
-.contact-icon:focus{
-    fill: var(--accent-color);
-}
 .contact-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--secondary-text-color);
 }
 .contact-link:hover,
 .contact-link:focus{
     color: var(--accent-color);
+}
+.contact-link:hover svg,
+.contact-link:focus svg{
+    fill: var(--accent-color);
 }
 
 /* Main index.html */
