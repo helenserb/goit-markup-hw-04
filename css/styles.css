@@ -11,6 +11,7 @@
     --border-color: #ECECEC;
     --portfolio-border: #EEEEEE;
     --btn-active: #188CE8;
+    --icon-color: #afb1b8;
     --main-font: "Roboto", sans-serif;
     --logo-font: "Raleway", sans-serif;
 }
@@ -284,10 +285,39 @@ img{
     line-height: 1.19;
 }
 .employee-position{
+    padding-bottom: 16px;
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.19;
     text-transform: capitalize;
+}
+.social-list{
+    display: flex;
+    justify-content: center;
+}
+.social-item:not(:last-child){
+    margin-right: 10px;
+}
+.social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    outline: 1px solid red;
+}
+.social-icon{
+    fill: var(--icon-color);
+}
+.social-link:hover,
+.social-link:focus{
+    background-color: var(--accent-color);
+}
+.social-link:hover svg,
+.social-link:focus svg{
+    fill: var(--white-text-color);
 }
 .uppercase{
     text-transform: uppercase;
