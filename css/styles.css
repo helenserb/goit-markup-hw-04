@@ -285,7 +285,7 @@ img{
     line-height: 1.19;
 }
 .employee-position{
-    padding-bottom: 16px;
+    margin-bottom: 16px;
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.19;
@@ -465,4 +465,7 @@ img{
 }
 .social-footer{
     background-color: rgba(255, 255, 255, 0.1);
+}
+.social-footer-icon{
+    fill: var(--white-text-color);
 }
